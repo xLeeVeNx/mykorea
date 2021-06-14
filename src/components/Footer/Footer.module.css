@@ -1,0 +1,265 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5926ea;
+}
+
+.shell {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials_box {
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  margin-left: 50px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 152%;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.socials_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.socials_icon {
+  object-fit: contain;
+}
+
+.contacts {
+  display: flex;
+  margin-right: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contacts_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.contacts_li {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 152%;
+  color: #ffffff;
+}
+
+.contacts_li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacts_image {
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.email_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.email {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 152%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.email a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacts_email_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 152%;
+  color: #ffffff;
+}
+
+@media all and (max-width: 768px) {
+  .footer {
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 28px;
+    position: relative;
+  }
+  .shell {
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .socials_box {
+    margin-left: 0;
+  }
+  .title {
+    margin-top: 22px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .contacts_li {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 152%;
+  }
+  .socials_icon {
+    width: 50px;
+    height: 50px;
+  }
+  .email {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 152%;
+  }
+  .contacts_image {
+    width: 16px;
+    height: 16px;
+  }
+  .contacts_list {
+    margin-bottom: 0;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .contacts {
+    margin-right: 0;
+  }
+  .header {
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .shell {
+    flex-direction: column;
+    margin-top: 3px;
+    justify-content: space-between;
+  }
+  .header {
+    width: 100%;
+    left: 0;
+    position: relative;
+    align-self: flex-start;
+    justify-self: flex-start;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .footer {
+    padding-bottom: 10px;
+  }
+  .shell {
+    flex-direction: column;
+    margin-top: 3px;
+    justify-content: space-between;
+  }
+  .socials_box {
+    margin-left: 0;
+  }
+  .title {
+    width: 100%;
+    margin-top: 0px;
+    font-size: 17px;
+  }
+  .contacts_li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 152%;
+  }
+  .socials_list {
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .socials_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .email {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 152%;
+  }
+  .contacts_image {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+  .contacts_list {
+    margin-bottom: 0;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .contacts {
+    margin-right: 0;
+  }
+  .header {
+    width: 100%;
+    left: 0;
+    position: relative;
+    align-self: flex-start;
+    justify-self: flex-start;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .contacts_email_box {
+    margin-top: 10px;
+  }
+}
